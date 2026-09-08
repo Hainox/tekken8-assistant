@@ -1,0 +1,59 @@
+{
+  "name": "Nina Williams",
+  "aliases": ["nina"],
+  "kage_slug": "nina",
+  "archetype": "Агрессивный плюс-фреймовый боец с быстрыми поками, сильным sidestep и мощными CH-цепочками.",
+  "difficulty": "средняя",
+  "strengths": [
+    "Отличные плюсовые кадры на многих мид-ударах",
+    "d/f+1 — быстрый мид с плюсами на блоке",
+    "u/f+1+2 — мид-лаунчер с хорошим reach",
+    "qcf+1 — дальний мид с pressure",
+    "SS 1 — сильный CH мид из sidestep"
+  ],
+  "weaknesses": [
+    "Низкий урон без оптимальных комбо",
+    "Многие строки линейны и уязвимы для sidestep",
+    "Требует execution для максимального урона",
+    "Слабая игра на дальней дистанции"
+  ],
+  "key_moves": [
+    {"input": "d/f+1", "name": "Slap Shot", "note": "Быстрый мид-пок с плюсами, основа pressure."},
+    {"input": "u/f+1+2", "name": "Cannonball", "note": "Мид-лаунчер с хорошим reach."},
+    {"input": "qcf+1", "name": "Blonde Bomb", "note": "Дальний мид с давлением."},
+    {"input": "SS 1", "name": "Sidestep Slap", "note": "CH мид с подбрасыванием из sidestep."},
+    {"input": "d+3,2", "name": "Sweep Kick", "note": "Лоу-мид цепочка для микса."},
+    {"input": "b+1+2", "name": "Queen's Bite", "note": "Быстрый мид с плюсами и evasion."}
+  ],
+  "combos": [
+    {"label": "Простое BnB", "notation": "u/f,1+2 ► d/f,1 ► 1,2 ► 1+2", "damage": "~63", "note": "Базовый маршрут с Cannonball."},
+    {"label": "Среднее", "notation": "SS 1 ► d/f,1 ► 1,2 ► d/f,1", "damage": "~68", "note": "Из CH sidestep, требует timing."},
+    {"label": "Оптимальное", "notation": "u/f,1+2 ► d/f,1 ► 1,2 ► qcf,1 ► d/f,1", "damage": "~75", "note": "Максимальный carry с Blonde Bomb."},
+    {"label": "Со стены / Heat", "notation": "W! ► d/f,1 ► 1,2 ► Heat ► u/f,1+2 ► 1+2", "damage": "~82", "note": "Стенный pressure с Heat-усилением."}
+  ],
+  "game_plan": [
+    "Давите плюсовыми кадрами d/f+1 и b+1+2.",
+    "Используйте sidestep для evasion и setup SS 1.",
+    "Наказывайте whiff u/f+1+2 или qcf+1.",
+    "Используйте d+3,2 как лоу-мид микс после плюсовых кадров."
+  ],
+  "tips": [
+    "Nina отлично sidestep'ит — используйте для whiff punishment.",
+    "qcf+1 помогает закрывать дистанцию и держать pressure.",
+    "SS 1 — отличная CH-ловушка против агрессивных оппонентов.",
+    "Не злоупотребляйте u/f+1+2 — наказываем на блоке."
+  ],
+  "threats": [
+    "d/f+1 — плюсовой мид-пок, запускает pressure.",
+    "u/f+1+2 — мид-лаунчер с reach.",
+    "SS 1 — CH мид из sidestep, опасно press'ить.",
+    "qcf+1 — дальний мид с давлением и wall carry."
+  ],
+  "counterplay": [
+    "Sidestep влево обходит многие её линейные атаки.",
+    "Наказывайте u/f,1+2 на блоке — она отрицательна.",
+    "Не нажимайте кнопки после d/f+1, иначе поймаете CH setup.",
+    "Держите дистанцию, чтобы не попадать под её pressure.",
+    "Используйте keepout, чтобы сбивать её approach."
+  ]
+}

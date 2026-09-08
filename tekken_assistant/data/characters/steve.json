@@ -1,0 +1,59 @@
+{
+  "name": "Steve Fox",
+  "aliases": ["steve"],
+  "kage_slug": "steve",
+  "archetype": "Боксёр с уникальной системой уклонений, сильным pressure и мощными CH-ударами в close range.",
+  "difficulty": "высокая",
+  "strengths": [
+    "Одна из лучших CH-игр в close range",
+    "Ducking/Weave система уклоняется от хай и многих мидов",
+    "d/f+1,2 — быстрая мид-мид цепочка с плюсами",
+    "b+1 — сильный хай с отскоком на CH",
+    "Flicker stance — даёт доступ к мощным ударам и миксам"
+  ],
+  "weaknesses": [
+    "Нет традиционного хопкика-лаунчера",
+    "Требует высокого execution и знания stance system",
+    "Слабые лоу опции по сравнению с другими персонажами",
+    "Зависим от close range для максимальной эффективности"
+  ],
+  "key_moves": [
+    {"input": "d/f+1,2", "name": "Quick Hook Combo", "note": "Быстрая мид-мид цепочка с плюсами на блоке."},
+    {"input": "b+1", "name": "Spinning Backfist", "note": "Хай с отскоком на CH и огромным уроном."},
+    {"input": "ext dck 2", "name": "Ducking Uppercut", "note": "Мид-лаунчер из extended ducking."},
+    {"input": "FLK 1", "name": "Flicker Jab", "note": "Быстрый мид из Flicker stance."},
+    {"input": "FLK d+1", "name": "Flicker Low", "note": "Лоу из Flicker stance для микса."},
+    {"input": "d+1", "name": "Body Blow", "note": "Быстрый лоу с плюсами на hit."}
+  ],
+  "combos": [
+    {"label": "Простое BnB", "notation": "ext dck,2 ► d/f,1,2 ► 1,2 ► 1+2", "damage": "~64", "note": "Базовый маршрут из ducking."},
+    {"label": "Среднее", "notation": "CH b,1 ► d/f,1,2 ► 1,2 ► d/f,1", "damage": "~71", "note": "С CH backfist, требует распознавания отскока."},
+    {"label": "Оптимальное", "notation": "ext dck,2 ► d/f,1,2 ► 1,2 ► FLK 1 ► d/f,1", "damage": "~77", "note": "Максимальный урон с Flicker эндером."},
+    {"label": "Со стены / Heat", "notation": "W! ► d/f,1,2 ► Heat ► ext dck,2 ► 1,2", "damage": "~83", "note": "Стенный pressure с Heat-усилением."}
+  ],
+  "game_plan": [
+    "Войдите в close range и давите d/f+1,2 и ducking/Weave.",
+    "Используйте CH b+1 как ловушку для оппонентов, нажимающих кнопки.",
+    "Наказывайте whiff ext dck+2 или быстрыми ударами.",
+    "Применяйте Flicker stance для миксов и неожиданных угроз."
+  ],
+  "tips": [
+    "Ducking уклоняется от хай и многих мид — используйте для evasion.",
+    "ext dck+2 — ваш главный лаунчер, требует правильного ввода.",
+    "b+1 на CH отскакивает — всегда готовьте комбо.",
+    "FLK опции быстры, но не злоупотребляйте — мид часть наказуема."
+  ],
+  "threats": [
+    "d/f+1,2 — плюсовая мид-мид цепочка, запускает pressure.",
+    "CH b+1 — отскок с огромным уроном.",
+    "ext dck+2 — мид-лаунчер из ducking.",
+    "FLK миксы — быстрые мид/лоу опции из Flicker."
+  ],
+  "counterplay": [
+    "Используйте лоу и delay, чтобы сбивать его ducking и Weave.",
+    "Наказывайте b+1 на блоке — это хай, duck даёт полное наказание.",
+    "Держите дистанцию, чтобы не попадать под его close range pressure.",
+    "Не нажимайте кнопки после d/f+1,2 — иначе поймаете CH.",
+    "Sidestep помогает против многих его линейных ударов."
+  ]
+}

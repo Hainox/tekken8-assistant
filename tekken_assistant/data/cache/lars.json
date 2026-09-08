@@ -1,0 +1,75 @@
+{
+  "fetched_at": 1788831420.9111419,
+  "combos": [
+    {
+      "label": "Kage #2345",
+      "notation": "During Heat f f 1+2 ► f f f 1 B ► Dash ► d/f 3 D ► Dynamic Entry 2 ► d/f 2 ► Silent Entry 4 ► d/b 2 F ► Silent Entry 1+2 ► Dash SSL ► d/f 1 1 D ► Dynamic Entry 1 F ► Silent Entry 1 F ► Dash ► d/f 3 D ► Dynamic Entry 2 ► iWR ► 1 ► d/f 1 ► d 3 1",
+      "damage": "123 damages (20 hits)",
+      "note": "",
+      "source": "kage:v2.09"
+    },
+    {
+      "label": "Kage #2023",
+      "notation": "u/f 3 ► WS 4 ► d/b 2 3 ► Heat Burst ► 1 1 1 F ► W! ► d 3 1",
+      "damage": "73 damages (13 hits)",
+      "note": "",
+      "source": "kage:v2.05"
+    },
+    {
+      "label": "Kage #2008",
+      "notation": "u/f 3 ► FC D/F 2 ► d/b 2 F ► Silent Entry 1+2 ► f f F 1 ► Silent Entry 3+4",
+      "damage": "75 damages (8 hits)",
+      "note": "",
+      "source": "kage:v2.03"
+    },
+    {
+      "label": "Kage #1959",
+      "notation": "f f 2 F ► Silent Entry 1+2 ► b b 2 B ► Silent Entry 3+4",
+      "damage": "52 damages (5 hits)",
+      "note": "",
+      "source": "kage:v2.02"
+    },
+    {
+      "label": "Kage #1881",
+      "notation": "F 1+2 ► d/f 3 d/f ► Dynamic Entry 2 ► d/f 2 ► Silent Entry 4 ► 2 ► b 3 f ► Silent Entry 1+2 ► f 3 ► Dynamic Entry 1 N ► During Heat f 3+4 3+4",
+      "damage": "79 damages (13 hits)",
+      "note": "",
+      "source": "kage:v2.01"
+    },
+    {
+      "label": "Kage #1872",
+      "notation": "f 1+2 ► d/f 3 D/F ► Dynamic Entry 2 ► d/f 2 ► Silent Entry 4 ► 2 ► b 3 F ► Silent Entry 1+2 ► f 3 ► Dynamic Entry 1 2 ► W! ► f 3 ► Dynamic Entry 1 ► d 3 1",
+      "damage": "112 damages (15 hits)",
+      "note": "",
+      "source": "kage:v2.01"
+    },
+    {
+      "label": "Kage #1850",
+      "notation": "f 1+2 ► d/f 3 2 D/F ► Dynamic Entry 2 ► d/f 2 ► Silent Entry 4 ► 2 ► b 3 F ► Silent Entry 1+2 ► f 3 ► Dynamic Entry 1 2 ► W! ► 1 ► d/f 1 ► d 3 1",
+      "damage": "106 damages (16 hits)",
+      "note": "",
+      "source": "kage:v2.00"
+    },
+    {
+      "label": "Kage #1848",
+      "notation": "WS 1 F ► Silent Entry 3 ► d/f 1 1 D ► 1 ► b 3 F 1+2 ► f f F 1 ► 4 ► Heat Burst ► Dash d/f 1 1 D ► 1 F 1 F F ► Dash f 1+4",
+      "damage": "89 damages (15 hits)",
+      "note": "",
+      "source": "kage:v2.00"
+    },
+    {
+      "label": "Kage #1845",
+      "notation": "u/f 4 ► f 3 Dynamic Entry 2 ► f 1 2 3 Dynamic Entry 1 ► b 3 F Silent Entry 1+2 ► During Heat ► d/f 1 1 D/F ► 1 F ► 1 F ► Heat Burst ► W! ► d 3 1",
+      "damage": "99 damages (14 hits)",
+      "note": "",
+      "source": "kage:v2.00"
+    },
+    {
+      "label": "Kage #1818",
+      "notation": "U/F 4 ► F 3 ► Dynamic Entry 2 ► D/F 2 ► Silent Entry 4 ► 2 ► D/F 2 ► Silent Entry 1+2 ► F 3 ► Dynamic Entry 2 U 4",
+      "damage": "75 damages (10 hits)",
+      "note": "",
+      "source": "kage:v2.03"
+    }
+  ]
+}

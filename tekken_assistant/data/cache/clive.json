@@ -1,0 +1,75 @@
+{
+  "fetched_at": 1788826463.1915514,
+  "combos": [
+    {
+      "label": "Kage #2299",
+      "notation": "During Heat ► ( f 2 2 ) 1 *(max) ► d/b 1+2 2 ► Updraft : 3 ► u 1+2 1 W! ► u 1+2 1 WB! ► d/f 1 2 F ► Phoenix Shift 1+2 WB! ► f 1+2 F ► Zantetsuken Lv.5 1+4",
+      "damage": "137 damages (31 hits)",
+      "note": "",
+      "source": "kage:v2.08"
+    },
+    {
+      "label": "Kage #2163",
+      "notation": "f 3 ► d/b 1+2 1 ► 3 ► Heat Burst ► b 2 ► u 1+2 1+2 f 2 2 ► f 1 ► Dash ► Zantetsuken Lv.5 1+4",
+      "damage": "99 damages (24 hits)",
+      "note": "Sticky Note In the video I did the combo differently because of a wall so I didn't dash at the end.",
+      "source": "kage:v2.08"
+    },
+    {
+      "label": "Kage #2146",
+      "notation": "b 4 ► d/b 1+2 1 ► 3 ► Dash ► 4 4 F ► 2 1 ► Dash b 2 F ► 2 2",
+      "damage": "78 damages (16 hits)",
+      "note": "",
+      "source": "kage:v2.06"
+    },
+    {
+      "label": "Kage #2118",
+      "notation": "f F 2 ► d 1 ► 4 ► d/b 1+2 1 ► 2 2 ► iWR ► b 2 F ► 2 2",
+      "damage": "84 damages (16 hits)",
+      "note": "",
+      "source": "kage:v2.06"
+    },
+    {
+      "label": "Kage #2117",
+      "notation": "b 1 ► d 1 ► 4 ► d/b 1+2 1 ► 2 2 ► iWR ► 1 1 F ► 2 2",
+      "damage": "78 damages (17 hits)",
+      "note": "",
+      "source": "kage:v2.06"
+    },
+    {
+      "label": "Kage #2116",
+      "notation": "d/f 2 ► d/b 1+2 1 ► 3 ► Dash ► 4 4 F ► 2 1 ► Dash ► b 2 F ► 2 2",
+      "damage": "69 damages (17 hits)",
+      "note": "",
+      "source": "kage:v2.06"
+    },
+    {
+      "label": "Kage #2081",
+      "notation": "d/f 2 ► d/f 1 4 ► d/b 1+2 1 ► 2 2 ► Dash d/f 1 2 F ► 2 2",
+      "damage": "71 damages (18 hits)",
+      "note": "",
+      "source": "kage:v2.06"
+    },
+    {
+      "label": "Kage #2031",
+      "notation": "d 1 ► WS 2 ► d/f 1 4 ► d/b 1+2 1 ► Updraft 2 2 ► Dash b 2 F ► Phoenix Shift 1",
+      "damage": "75 damages (12 hits)",
+      "note": "",
+      "source": "kage:v2.05"
+    },
+    {
+      "label": "Kage #1877",
+      "notation": "b 1 ► d/f 1 4 ► d/b 1+2 1 ► Updraft 2 2 ► Dash ► b 2 F ► Phoenix Shift ► 1",
+      "damage": "84 damages (12 hits)",
+      "note": "",
+      "source": "kage:v2.01"
+    },
+    {
+      "label": "Kage #1876",
+      "notation": "b 1 ► d 1 ► WS 4 ► d/b 1+2 1 ► Updraft 2 2 ► Dash ► 1 ► Rage Art",
+      "damage": "93 damages (21 hits)",
+      "note": "",
+      "source": "kage:v2.01"
+    }
+  ]
+}
