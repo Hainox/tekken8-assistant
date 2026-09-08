@@ -1,0 +1,31 @@
+name: Build EXE and Release
+
+on:
+  push:
+    tags:
+      - "v*"
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt pyinstaller
+
+      - name: Build EXE
+        run: |
+          python -m PyInstaller --onefile --noconsole --name Tekken8Assistant --icon assets/icons/assistant.ico --add-data "tekken_assistant/data;tekken_assistant/data" --exclude-module=torch --exclude-module=cv2 --exclude-module=scipy --exclude-module=grpc --exclude-module=transformers --exclude-module=tokenizers --exclude-module=matplotlib --exclude-module=pandas --exclude-module=IPython --exclude-module=hf_xet --exclude-module=huggingface_hub --exclude-module=sympy --exclude-module=networkx --exclude-module=pytz main.py
+
+      - name: Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: dist/Tekken8Assistant.exe
+          generate_release_notes: true

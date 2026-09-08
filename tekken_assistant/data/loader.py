@@ -1,11 +1,19 @@
 from __future__ import annotations
 
 import json
+import sys
 from pathlib import Path
 
 from tekken_assistant.models import Character
 
-CHARACTERS_DIR = Path(__file__).resolve().parent / "characters"
+
+def _data_root() -> Path:
+    if getattr(sys, "frozen", False):
+        return Path(getattr(sys, "_MEIPASS", ".")) / "tekken_assistant" / "data"
+    return Path(__file__).resolve().parent
+
+
+CHARACTERS_DIR = _data_root() / "characters"
 
 
 def load_characters(directory: Path = CHARACTERS_DIR) -> dict[str, Character]:

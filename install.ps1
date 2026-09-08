@@ -27,8 +27,16 @@ if (-not $tess) { $tess = (Get-Command tesseract -ErrorAction SilentlyContinue).
 if ($tess) {
     Write-Host "      найден: $tess" -ForegroundColor Green
 } else {
-    Write-Warning "Tesseract-OCR не найден — определение персонажей работать не будет."
-    Write-Host "      Установите его отсюда: https://github.com/UB-Mannheim/tesseract/wiki" -ForegroundColor Yellow
+    Write-Host "      Tesseract-OCR не найден, пробую установить через winget..." -ForegroundColor Yellow
+    $winget = Get-Command winget -ErrorAction SilentlyContinue
+    if ($winget) {
+        winget install --id UB-Mannheim.TesseractOCR -e --silent --accept-source-agreements --accept-package-agreements
+        $tess = @("C:\Program Files\Tesseract-OCR\tesseract.exe") | Where-Object { Test-Path -LiteralPath $_ }
+        if ($tess) { Write-Host "      Tesseract установлен." -ForegroundColor Green }
+        else { Write-Warning "Не удалось установить Tesseract автоматически. Установите вручную: https://github.com/UB-Mannheim/tesseract/wiki" }
+    } else {
+        Write-Warning "winget не найден. Установите Tesseract вручную: https://github.com/UB-Mannheim/tesseract/wiki"
+    }
 }
 
 Write-Host "[3/4] Создание ярлыков на рабочем столе..."

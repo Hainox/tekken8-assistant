@@ -4,6 +4,8 @@
 
 ![Демо](assets/demo.png)
 
+> Панель можно перетащить на второй монитор (режим `F7` → «2-й монитор») — или она сама станет прозрачной через 8 секунд без наведения мыши.
+
 ## Возможности
 
 - **Автоопределение персонажей** — скриншот + OCR (Tesseract) читают имена с HUD игры, 42 персонажа.
@@ -16,15 +18,27 @@
 
 ## Установка (Windows)
 
+### Вариант 1 — готовый exe (проще всего)
+
+1. Скачайте `Tekken8Assistant.exe` со страницы [Releases](https://github.com/Hainox/tekken8-assistant/releases) и положите в любую папку — Python не нужен.
+2. Для распознавания персонажей установите Tesseract-OCR (один раз):
+
+```powershell
+winget install UB-Mannheim.TesseractOCR
+```
+
+3. Запустите `Tekken8Assistant.exe`.
+
+### Вариант 2 — из исходников
+
 1. Установите [Python 3.11+](https://www.python.org/downloads/) (при установке отметьте *Add to PATH*).
-2. Установите [Tesseract-OCR](https://github.com/UB-Mannheim/tesseract/wiki) (по умолчанию в `C:\Program Files\Tesseract-OCR`).
-3. Скачайте репозиторий и в его папке выполните:
+2. Скачайте репозиторий и в его папке выполните:
 
 ```powershell
 powershell -ExecutionPolicy Bypass -File install.ps1
 ```
 
-Скрипт установит зависимости, проверит Tesseract и создаст ярлык **Tekken 8 Assistant** на рабочем столе. С ключом `-WithAutostart` дополнительно настроит автозапуск вместе с игрой:
+Скрипт установит зависимости, при необходимости сам поставит Tesseract через winget и создаст ярлык **Tekken 8 Assistant** на рабочем столе. С ключом `-WithAutostart` дополнительно настроит автозапуск вместе с игрой:
 
 ```powershell
 powershell -ExecutionPolicy Bypass -File install.ps1 -WithAutostart

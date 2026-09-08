@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+import sys
 import time
 from pathlib import Path
 
@@ -10,7 +11,15 @@ from bs4 import BeautifulSoup
 from tekken_assistant.models import Combo
 
 BASE_URL = "https://tekken8combo.kagewebsite.com"
-CACHE_DIR = Path(__file__).resolve().parent / "cache"
+
+
+def _cache_dir() -> Path:
+    if getattr(sys, "frozen", False):
+        return Path(sys.executable).resolve().parent / "data_cache"
+    return Path(__file__).resolve().parent / "cache"
+
+
+CACHE_DIR = _cache_dir()
 CACHE_TTL = 24 * 3600.0
 REQUEST_TIMEOUT = 12.0
 

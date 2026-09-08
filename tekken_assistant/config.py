@@ -1,10 +1,18 @@
 from __future__ import annotations
 
 import json
+import sys
 from dataclasses import asdict, dataclass, fields, replace
 from pathlib import Path
 
-CONFIG_PATH = Path(__file__).resolve().parent.parent / "config.json"
+
+def app_dir() -> Path:
+    if getattr(sys, "frozen", False):
+        return Path(sys.executable).resolve().parent
+    return Path(__file__).resolve().parent.parent
+
+
+CONFIG_PATH = app_dir() / "config.json"
 
 
 @dataclass(frozen=True)

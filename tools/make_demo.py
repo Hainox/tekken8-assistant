@@ -144,6 +144,18 @@ def main() -> None:
     # glossary hint (bottom right of panel)
     d.text((px + 14, py + ph - 30), "Вкладка «Словарь»: WS, iWR, KBD, CH, Oki…", font=seg(11), fill=DIM)
 
+    # ---------- bottom caption strip ----------
+    strip_y, strip_h = 856, 44
+    d.rectangle([0, strip_y, img.width, strip_y + strip_h], fill=(10, 14, 19, 200))
+    caption = "Оверлей можно перетащить на второй монитор (F7) — или он сам станет прозрачным через 8 секунд без наведения мыши"
+    d.text(
+        (img.width // 2, strip_y + strip_h // 2),
+        caption,
+        font=seg(15),
+        fill=(255, 255, 255, 255),
+        anchor="mm",
+    )
+
     out = Image.alpha_composite(img, overlay).convert("RGB")
     OUT.parent.mkdir(parents=True, exist_ok=True)
     out.save(OUT)
