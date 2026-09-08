@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="340" viewBox="0 0 1200 340" role="img" aria-labelledby="hero-title hero-desc">
+  <title id="hero-title">Tekken 8 Assistant</title>
+  <desc id="hero-desc">Оверлей для Tekken 8: сам определяет персонажей по экрану и показывает комбо с цветными кнопками и контрплей против оппонента.</desc>
+
+  <rect width="1200" height="340" rx="26" fill="#0d1117"/>
+
+  <g id="title-block" transform="translate(64 54)">
+    <text font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="18" fill="#8a939e" letter-spacing="4">TEKKEN 8 · ОВЕРЛЕЙ ДЛЯ PC</text>
+    <text y="66" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="58" font-weight="700" fill="#e6e6e6">Tekken 8 <tspan fill="#e5a13c">Assistant</tspan></text>
+    <text y="116" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="22" fill="#c9d1d9">Сам определяет персонажей по экрану и показывает</text>
+    <text y="146" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="22" fill="#c9d1d9">комбо, план и контрплей прямо во время боя</text>
+    <text y="200" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="18" fill="#8a939e">42 персонажа · OCR · Windows · готовый exe</text>
+  </g>
+
+  <g id="proof-card" transform="translate(756 46)">
+    <rect width="380" height="250" rx="14" fill="#131a22" stroke="#232b36" stroke-width="1"/>
+    <circle cx="26" cy="32" r="5" fill="#7ec46a"/>
+    <text x="40" y="38" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="19" font-weight="600" fill="#e6e6e6">Victor <tspan fill="#8a939e" font-weight="400">vs</tspan> Steve</text>
+    <line x1="20" y1="58" x2="360" y2="58" stroke="#232b36"/>
+
+    <text x="20" y="90" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="18" fill="#8a939e">Простое BnB <tspan fill="#e5a13c">~68</tspan></text>
+
+    <g id="row1" transform="translate(20 102)">
+      <g transform="translate(0 5)"><path d="M1 1 L17 17 M17 17 h-10 M17 17 v-10" stroke="#6ec1ff" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></g>
+      <rect x="22" width="28" height="28" rx="6" fill="#d9a13c"/>
+      <text x="36" y="20" text-anchor="middle" font-family="Consolas, monospace" font-size="18" font-weight="700" fill="#141414">2</text>
+      <g transform="translate(56 6)"><path d="M0 0 L8 8 L0 16 M12 0 L20 8 L12 16" stroke="#6ec1ff" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></g>
+      <rect x="80" width="28" height="28" rx="6" fill="#2e9e4f"/>
+      <text x="94" y="20" text-anchor="middle" font-family="Consolas, monospace" font-size="18" font-weight="700" fill="#ffffff">3</text>
+      <g transform="translate(114 5)"><path d="M1 1 L17 17 M17 17 h-10 M17 17 v-10" stroke="#6ec1ff" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></g>
+      <rect x="138" width="28" height="28" rx="6" fill="#2f6fd0"/>
+      <text x="152" y="20" text-anchor="middle" font-family="Consolas, monospace" font-size="18" font-weight="700" fill="#ffffff">1</text>
+      <g transform="translate(172 5)"><path d="M0 9 H20 M20 9 l-9 -7 M20 9 l-9 7" stroke="#6ec1ff" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></g>
+      <rect x="198" width="28" height="28" rx="6" fill="#2f6fd0"/>
+      <text x="212" y="20" text-anchor="middle" font-family="Consolas, monospace" font-size="18" font-weight="700" fill="#ffffff">1</text>
+      <text x="230" y="20" font-family="Consolas, monospace" font-size="18" fill="#8a939e">+</text>
+      <rect x="246" width="28" height="28" rx="6" fill="#d9a13c"/>
+      <text x="260" y="20" text-anchor="middle" font-family="Consolas, monospace" font-size="18" font-weight="700" fill="#141414">2</text>
+    </g>
+
+    <text x="20" y="168" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="18" fill="#8a939e">Оптимальное <tspan fill="#e5a13c">~86</tspan></text>
+
+    <g id="row2" transform="translate(20 180)">
+      <g transform="translate(0 5)"><path d="M1 1 L17 17 M17 17 h-10 M17 17 v-10" stroke="#6ec1ff" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></g>
+      <rect x="22" width="28" height="28" rx="6" fill="#d9a13c"/>
+      <text x="36" y="20" text-anchor="middle" font-family="Consolas, monospace" font-size="18" font-weight="700" fill="#141414">2</text>
+      <g transform="translate(56 6)"><path d="M0 0 L8 8 L0 16 M12 0 L20 8 L12 16" stroke="#6ec1ff" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></g>
+      <rect x="80" width="28" height="28" rx="6" fill="#2e9e4f"/>
+      <text x="94" y="20" text-anchor="middle" font-family="Consolas, monospace" font-size="18" font-weight="700" fill="#ffffff">3</text>
+      <g transform="translate(114 5)"><path d="M1 1 L17 17 M17 17 h-10 M17 17 v-10" stroke="#6ec1ff" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></g>
+      <rect x="138" width="28" height="28" rx="6" fill="#d9a13c"/>
+      <text x="152" y="20" text-anchor="middle" font-family="Consolas, monospace" font-size="18" font-weight="700" fill="#141414">2</text>
+      <g transform="translate(172 5)"><path d="M1 1 L17 17 M17 17 h-10 M17 17 v-10" stroke="#6ec1ff" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></g>
+      <rect x="198" width="28" height="28" rx="6" fill="#2f6fd0"/>
+      <text x="212" y="20" text-anchor="middle" font-family="Consolas, monospace" font-size="18" font-weight="700" fill="#ffffff">1</text>
+      <g transform="translate(232 5)"><path d="M0 9 H20 M20 9 l-9 -7 M20 9 l-9 7" stroke="#6ec1ff" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></g>
+      <rect x="258" width="28" height="28" rx="6" fill="#2f6fd0"/>
+      <text x="272" y="20" text-anchor="middle" font-family="Consolas, monospace" font-size="18" font-weight="700" fill="#ffffff">1</text>
+      <text x="290" y="20" font-family="Consolas, monospace" font-size="18" fill="#8a939e">+</text>
+      <rect x="306" width="28" height="28" rx="6" fill="#d9a13c"/>
+      <text x="320" y="20" text-anchor="middle" font-family="Consolas, monospace" font-size="18" font-weight="700" fill="#141414">2</text>
+    </g>
+
+    <text x="20" y="236" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="16" fill="#8a939e">клик по нотации — копирование в буфер</text>
+  </g>
+</svg>
