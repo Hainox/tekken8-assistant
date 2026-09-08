@@ -1,6 +1,8 @@
 from __future__ import annotations
 
+import os
 import shutil
+import sys
 from pathlib import Path
 
 from PIL import Image
@@ -13,9 +15,21 @@ _COMMON_TESSERACT_PATHS = (
 )
 
 
+def bundled_tesseract_dir() -> Path | None:
+    if not getattr(sys, "frozen", False):
+        return None
+    base = Path(getattr(sys, "_MEIPASS", "")) / "tesseract"
+    if (base / "tesseract.exe").exists():
+        return base
+    return None
+
+
 def resolve_tesseract_cmd(explicit: str = "") -> str:
     if explicit:
         return explicit
+    bundled = bundled_tesseract_dir()
+    if bundled:
+        return str(bundled / "tesseract.exe")
     found = shutil.which("tesseract")
     if found:
         return found
@@ -38,6 +52,9 @@ class TesseractOcr:
         resolved = resolve_tesseract_cmd(tesseract_cmd)
         if resolved:
             pytesseract.pytesseract.tesseract_cmd = resolved
+        bundled = bundled_tesseract_dir()
+        if bundled and not tesseract_cmd:
+            os.environ["TESSDATA_PREFIX"] = str(bundled / "tessdata")
         self._language = language
         self._min_confidence = min_confidence
 

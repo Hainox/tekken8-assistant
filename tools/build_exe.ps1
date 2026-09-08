@@ -1,6 +1,8 @@
 $ErrorActionPreference = "Stop"
 $dir = Split-Path -Parent $PSScriptRoot
 
+powershell -NoProfile -ExecutionPolicy Bypass -File "$dir\tools\prepare_tesseract.ps1" -OutDir "build/tesseract"
+
 python -m pip install pyinstaller --quiet --disable-pip-version-check
 $excludes = @(
     'torch', 'cv2', 'scipy', 'grpc', 'transformers', 'tokenizers',
@@ -14,6 +16,7 @@ python -m PyInstaller `
     --name Tekken8Assistant `
     --icon "$dir\assets\icons\assistant.ico" `
     --add-data "$dir\tekken_assistant\data;tekken_assistant\data" `
+    --add-data "$dir\build\tesseract;tesseract" `
     @excludes `
     "$dir\main.py"
 

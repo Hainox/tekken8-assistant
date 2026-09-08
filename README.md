@@ -20,14 +20,8 @@
 
 ### Вариант 1 — готовый exe (проще всего)
 
-1. Скачайте `Tekken8Assistant.exe` со страницы [Releases](https://github.com/Hainox/tekken8-assistant/releases) и положите в любую папку — Python не нужен.
-2. Для распознавания персонажей установите Tesseract-OCR (один раз):
-
-```powershell
-winget install UB-Mannheim.TesseractOCR
-```
-
-3. Запустите `Tekken8Assistant.exe`.
+1. Скачайте `Tekken8Assistant.exe` со страницы [Releases](https://github.com/Hainox/tekken8-assistant/releases) и положите в любую папку.
+2. Запустите — Python и Tesseract уже встроены, ничего дополнительно ставить не нужно.
 
 ### Вариант 2 — из исходников
 
