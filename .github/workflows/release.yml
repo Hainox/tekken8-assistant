@@ -21,14 +21,11 @@ jobs:
           python-version: "3.12"
 
       - name: Install dependencies
-        run: pip install -r requirements.txt pyinstaller
+        run: pip install -r requirements.txt
 
-      - name: Prepare bundled Tesseract
-        run: powershell -NoProfile -ExecutionPolicy Bypass -File tools/prepare_tesseract.ps1 -OutDir "build/tesseract"
-
+      # Single source of truth for the PyInstaller command and its exclude list.
       - name: Build EXE
-        run: |
-          python -m PyInstaller --onefile --noconsole --name Tekken8Assistant --icon assets/icons/assistant.ico --add-data "tekken_assistant/data;tekken_assistant/data" --add-data "build/tesseract;tesseract" --exclude-module=torch --exclude-module=cv2 --exclude-module=scipy --exclude-module=grpc --exclude-module=transformers --exclude-module=tokenizers --exclude-module=matplotlib --exclude-module=pandas --exclude-module=IPython --exclude-module=hf_xet --exclude-module=huggingface_hub --exclude-module=sympy --exclude-module=networkx --exclude-module=pytz main.py
+        run: powershell -NoProfile -ExecutionPolicy Bypass -File tools/build_exe.ps1
 
       - name: Release
         uses: softprops/action-gh-release@v2
