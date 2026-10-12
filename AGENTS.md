@@ -2,7 +2,7 @@
 
 ## Unwritten
 - Publishing: pushing a `v*` tag runs `.github/workflows/release.yml`, which builds `Tekken8Assistant.exe` on Windows with PyInstaller and bundled Tesseract and attaches it to a GitHub Release; a tag is a release.
-- Gotchas: the PyInstaller command lives twice, in `release.yml` and `tools/build_exe.ps1` (their `--exclude-module` lists already differ by `notebook`); change both. `tekken_assistant/data/cache/*.json` is the kage combo cache (24 h TTL) that a source run rewrites; the root-anchored `data/cache/` line in `.gitignore` does not cover it, so keep cache churn out of commits.
+- Gotchas: `tools/build_exe.ps1` is the only PyInstaller command (CI calls it), so change the exe build there. The kage combo cache (24 h TTL) lives in `tekken_assistant/data/cache/` from source and in `data_cache/` next to the frozen exe; it is gitignored and rebuilt at runtime.
 - Checks: `python -m pytest tests/ -q` (the only CI job, Ubuntu, Python 3.12). Capture, hotkeys, and the overlay need Windows and a running game, so CI does not exercise them.
 - Conventions: README, installer messages, and commit descriptions are in Russian, with conventional-commit prefixes. A character is one JSON file in `tekken_assistant/data/characters/`: `aliases` feed OCR name matching and `kage_slug` picks the kagewebsite combo page. The loader skips a malformed file with only a console print, so run `tests/test_loader.py` after editing one (adding a character also bumps its `EXPECTED_COUNT`).
 
