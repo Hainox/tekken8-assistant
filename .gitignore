@@ -5,7 +5,8 @@ __pycache__/
 venv/
 debug_frames/
 *.log
-data/cache/
+# Kage combo cache, rebuilt at runtime; the frozen exe uses data_cache/ next to itself.
+tekken_assistant/data/cache/
 build/
 dist/
 *.spec
